@@ -2,6 +2,9 @@
 using ClinicService.Models.Requests;
 using ClinicService.Services;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
+
+//NSwagStudio
 
 namespace ClinicService.Controllers
 {
@@ -18,6 +21,7 @@ namespace ClinicService.Controllers
         }
 
         [HttpPost("create")]
+        [SwaggerOperation(OperationId = "ClientCreate")]
         public ActionResult<int> Create([FromBody] CreateClientRequest createRequest)
         {
             int res = _clientRepository.Create(new Client
@@ -32,6 +36,7 @@ namespace ClinicService.Controllers
         }
 
         [HttpPut("update")]
+        [SwaggerOperation(OperationId = "ClientUpdate")]
         public ActionResult<int> Update([FromBody] UpdateClientRequest updateRequest)
         {
             int res = _clientRepository.Update(new Client
@@ -47,6 +52,7 @@ namespace ClinicService.Controllers
         }
 
         [HttpDelete("delete")]
+        [SwaggerOperation(OperationId = "ClientDelete")]
         public ActionResult<int> Delete(int clientId)
         {
             int res = _clientRepository.Delete(clientId);
@@ -54,12 +60,14 @@ namespace ClinicService.Controllers
         }
 
         [HttpGet("get-all")]
+        [SwaggerOperation(OperationId = "ClientGetAll")]
         public ActionResult<List<Client>> GetAll()
         {
             return Ok(_clientRepository.GetAll());
         }
 
         [HttpGet("get-by-id")]
+        [SwaggerOperation(OperationId = "ClientGetById")]
         public ActionResult<Client> GetById(int clientId) 
         {
             return Ok(_clientRepository.GetById(clientId));

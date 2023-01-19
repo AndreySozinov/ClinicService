@@ -24,7 +24,7 @@ namespace ClinicDesctop
             ClinicServiceClient clinicServiceClient = 
                 new ClinicServiceClient("http://localhost:5210/", new HttpClient());
 
-            ICollection<Client> clients = clinicServiceClient.GetAllAllAsync().Result;
+            ICollection<Client> clients = clinicServiceClient.ClientGetAllAsync().Result;
 
             listViewClients.Items.Clear();
             foreach (Client client in clients)

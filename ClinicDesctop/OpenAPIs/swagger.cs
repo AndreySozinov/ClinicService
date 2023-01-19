@@ -50,15 +50,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<int> CreateAsync(CreateClientRequest body)
+        public System.Threading.Tasks.Task<int> ClientCreateAsync(CreateClientRequest body)
         {
-            return CreateAsync(body, System.Threading.CancellationToken.None);
+            return ClientCreateAsync(body, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<int> CreateAsync(CreateClientRequest body, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<int> ClientCreateAsync(CreateClientRequest body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Client/create");
@@ -125,15 +125,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<int> UpdateAsync(UpdateClientRequest body)
+        public System.Threading.Tasks.Task<int> ClientUpdateAsync(UpdateClientRequest body)
         {
-            return UpdateAsync(body, System.Threading.CancellationToken.None);
+            return ClientUpdateAsync(body, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<int> UpdateAsync(UpdateClientRequest body, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<int> ClientUpdateAsync(UpdateClientRequest body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Client/update");
@@ -200,15 +200,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<int> DeleteAsync(int? clientId)
+        public System.Threading.Tasks.Task<int> ClientDeleteAsync(int? clientId)
         {
-            return DeleteAsync(clientId, System.Threading.CancellationToken.None);
+            return ClientDeleteAsync(clientId, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<int> DeleteAsync(int? clientId, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<int> ClientDeleteAsync(int? clientId, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Client/delete?");
@@ -277,15 +277,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Client>> GetAllAllAsync()
+        public System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Client>> ClientGetAllAsync()
         {
-            return GetAllAllAsync(System.Threading.CancellationToken.None);
+            return ClientGetAllAsync(System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Client>> GetAllAllAsync(System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Client>> ClientGetAllAsync(System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Client/get-all");
@@ -349,15 +349,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<Client> GetByIdAsync(int? clientId)
+        public System.Threading.Tasks.Task<Client> ClientGetByIdAsync(int? clientId)
         {
-            return GetByIdAsync(clientId, System.Threading.CancellationToken.None);
+            return ClientGetByIdAsync(clientId, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<Client> GetByIdAsync(int? clientId, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<Client> ClientGetByIdAsync(int? clientId, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Client/get-by-id?");
@@ -426,15 +426,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<int> Create2Async(CreateConsultationRequest body)
+        public System.Threading.Tasks.Task<int> ConsultationCreateAsync(CreateConsultationRequest body)
         {
-            return Create2Async(body, System.Threading.CancellationToken.None);
+            return ConsultationCreateAsync(body, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<int> Create2Async(CreateConsultationRequest body, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<int> ConsultationCreateAsync(CreateConsultationRequest body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Consultation/create");
@@ -501,15 +501,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<int> Update2Async(UpdateConsultationRequest body)
+        public System.Threading.Tasks.Task<int> ConsultationUpdateAsync(UpdateConsultationRequest body)
         {
-            return Update2Async(body, System.Threading.CancellationToken.None);
+            return ConsultationUpdateAsync(body, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<int> Update2Async(UpdateConsultationRequest body, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<int> ConsultationUpdateAsync(UpdateConsultationRequest body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Consultation/update");
@@ -576,15 +576,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<int> Delete2Async(int? consultationId)
+        public System.Threading.Tasks.Task<int> ConsultationDeleteAsync(int? consultationId)
         {
-            return Delete2Async(consultationId, System.Threading.CancellationToken.None);
+            return ConsultationDeleteAsync(consultationId, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<int> Delete2Async(int? consultationId, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<int> ConsultationDeleteAsync(int? consultationId, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Consultation/delete?");
@@ -653,15 +653,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Consultation>> GetAllAsync()
+        public System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Consultation>> ConsultationGetAllAsync()
         {
-            return GetAllAsync(System.Threading.CancellationToken.None);
+            return ConsultationGetAllAsync(System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Consultation>> GetAllAsync(System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Consultation>> ConsultationGetAllAsync(System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Consultation/get-all");
@@ -725,15 +725,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<Consultation> GetById2Async(int? consultationId)
+        public System.Threading.Tasks.Task<Consultation> ConsultationGetByIdAsync(int? consultationId)
         {
-            return GetById2Async(consultationId, System.Threading.CancellationToken.None);
+            return ConsultationGetByIdAsync(consultationId, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<Consultation> GetById2Async(int? consultationId, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<Consultation> ConsultationGetByIdAsync(int? consultationId, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Consultation/get-by-id?");
@@ -802,15 +802,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<int> Create3Async(CreateDoctorRequest body)
+        public System.Threading.Tasks.Task<int> DoctorCreateAsync(CreateDoctorRequest body)
         {
-            return Create3Async(body, System.Threading.CancellationToken.None);
+            return DoctorCreateAsync(body, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<int> Create3Async(CreateDoctorRequest body, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<int> DoctorCreateAsync(CreateDoctorRequest body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Doctor/create");
@@ -877,15 +877,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<int> Update3Async(UpdateDoctorRequest body)
+        public System.Threading.Tasks.Task<int> DoctorUpdateAsync(UpdateDoctorRequest body)
         {
-            return Update3Async(body, System.Threading.CancellationToken.None);
+            return DoctorUpdateAsync(body, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<int> Update3Async(UpdateDoctorRequest body, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<int> DoctorUpdateAsync(UpdateDoctorRequest body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Doctor/update");
@@ -952,15 +952,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<int> Delete3Async(int? doctorId)
+        public System.Threading.Tasks.Task<int> DoctorDeleteAsync(int? doctorId)
         {
-            return Delete3Async(doctorId, System.Threading.CancellationToken.None);
+            return DoctorDeleteAsync(doctorId, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<int> Delete3Async(int? doctorId, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<int> DoctorDeleteAsync(int? doctorId, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Doctor/delete?");
@@ -1029,15 +1029,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Doctor>> GetAll2Async()
+        public System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Doctor>> DoctorGetAllAsync()
         {
-            return GetAll2Async(System.Threading.CancellationToken.None);
+            return DoctorGetAllAsync(System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Doctor>> GetAll2Async(System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Doctor>> DoctorGetAllAsync(System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Doctor/get-all");
@@ -1101,15 +1101,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<Doctor> GetById3Async(int? doctorId)
+        public System.Threading.Tasks.Task<Doctor> DoctorGetByIdAsync(int? doctorId)
         {
-            return GetById3Async(doctorId, System.Threading.CancellationToken.None);
+            return DoctorGetByIdAsync(doctorId, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<Doctor> GetById3Async(int? doctorId, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<Doctor> DoctorGetByIdAsync(int? doctorId, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Doctor/get-by-id?");
@@ -1178,15 +1178,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<int> Create4Async(CreatePetRequest body)
+        public System.Threading.Tasks.Task<int> PetCreateAsync(CreatePetRequest body)
         {
-            return Create4Async(body, System.Threading.CancellationToken.None);
+            return PetCreateAsync(body, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<int> Create4Async(CreatePetRequest body, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<int> PetCreateAsync(CreatePetRequest body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Pet/create");
@@ -1253,15 +1253,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<int> Update4Async(UpdatePetRequest body)
+        public System.Threading.Tasks.Task<int> PetUpdateAsync(UpdatePetRequest body)
         {
-            return Update4Async(body, System.Threading.CancellationToken.None);
+            return PetUpdateAsync(body, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<int> Update4Async(UpdatePetRequest body, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<int> PetUpdateAsync(UpdatePetRequest body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Pet/update");
@@ -1328,15 +1328,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<int> Delete4Async(int? petId)
+        public System.Threading.Tasks.Task<int> PetDeleteAsync(int? petId)
         {
-            return Delete4Async(petId, System.Threading.CancellationToken.None);
+            return PetDeleteAsync(petId, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<int> Delete4Async(int? petId, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<int> PetDeleteAsync(int? petId, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Pet/delete?");
@@ -1405,15 +1405,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Pet>> GetAll3Async()
+        public System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Pet>> PetGetAllAsync()
         {
-            return GetAll3Async(System.Threading.CancellationToken.None);
+            return PetGetAllAsync(System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Pet>> GetAll3Async(System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Pet>> PetGetAllAsync(System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Pet/get-all");
@@ -1477,15 +1477,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<Pet> GetById4Async(int? petId)
+        public System.Threading.Tasks.Task<Pet> PetGetByIdAsync(int? petId)
         {
-            return GetById4Async(petId, System.Threading.CancellationToken.None);
+            return PetGetByIdAsync(petId, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<Pet> GetById4Async(int? petId, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<Pet> PetGetByIdAsync(int? petId, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Pet/get-by-id?");
@@ -1554,15 +1554,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<int> Create5Async(CreateTreatmentRequest body)
+        public System.Threading.Tasks.Task<int> TreatmentCreateAsync(CreateTreatmentRequest body)
         {
-            return Create5Async(body, System.Threading.CancellationToken.None);
+            return TreatmentCreateAsync(body, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<int> Create5Async(CreateTreatmentRequest body, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<int> TreatmentCreateAsync(CreateTreatmentRequest body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Treatment/create");
@@ -1629,15 +1629,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<int> Update5Async(UpdateTreatmentRequest body)
+        public System.Threading.Tasks.Task<int> TreatmentUpdateAsync(UpdateTreatmentRequest body)
         {
-            return Update5Async(body, System.Threading.CancellationToken.None);
+            return TreatmentUpdateAsync(body, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<int> Update5Async(UpdateTreatmentRequest body, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<int> TreatmentUpdateAsync(UpdateTreatmentRequest body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Treatment/update");
@@ -1704,15 +1704,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<int> Delete5Async(int? treatmentId)
+        public System.Threading.Tasks.Task<int> TreatmentDeleteAsync(int? treatmentId)
         {
-            return Delete5Async(treatmentId, System.Threading.CancellationToken.None);
+            return TreatmentDeleteAsync(treatmentId, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<int> Delete5Async(int? treatmentId, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<int> TreatmentDeleteAsync(int? treatmentId, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Treatment/delete?");
@@ -1781,15 +1781,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Treatment>> GetAll4Async()
+        public System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Treatment>> TreatmentGetAllAsync()
         {
-            return GetAll4Async(System.Threading.CancellationToken.None);
+            return TreatmentGetAllAsync(System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Treatment>> GetAll4Async(System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Treatment>> TreatmentGetAllAsync(System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Treatment/get-all");
@@ -1853,15 +1853,15 @@ namespace ClinicServiceNamespace
     
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public System.Threading.Tasks.Task<Treatment> GetById5Async(int? treatmentId)
+        public System.Threading.Tasks.Task<Treatment> TreatmentGetByIdAsync(int? treatmentId)
         {
-            return GetById5Async(treatmentId, System.Threading.CancellationToken.None);
+            return TreatmentGetByIdAsync(treatmentId, System.Threading.CancellationToken.None);
         }
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public async System.Threading.Tasks.Task<Treatment> GetById5Async(int? treatmentId, System.Threading.CancellationToken cancellationToken)
+        public async System.Threading.Tasks.Task<Treatment> TreatmentGetByIdAsync(int? treatmentId, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Treatment/get-by-id?");

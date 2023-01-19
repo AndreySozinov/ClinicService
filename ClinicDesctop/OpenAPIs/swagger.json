@@ -10,6 +10,7 @@
         "tags": [
           "Client"
         ],
+        "operationId": "ClientCreate",
         "requestBody": {
           "content": {
             "application/json": {
@@ -61,6 +62,7 @@
         "tags": [
           "Client"
         ],
+        "operationId": "ClientUpdate",
         "requestBody": {
           "content": {
             "application/json": {
@@ -112,6 +114,7 @@
         "tags": [
           "Client"
         ],
+        "operationId": "ClientDelete",
         "parameters": [
           {
             "name": "clientId",
@@ -155,6 +158,7 @@
         "tags": [
           "Client"
         ],
+        "operationId": "ClientGetAll",
         "responses": {
           "200": {
             "description": "Success",
@@ -193,6 +197,7 @@
         "tags": [
           "Client"
         ],
+        "operationId": "ClientGetById",
         "parameters": [
           {
             "name": "clientId",
@@ -233,6 +238,7 @@
         "tags": [
           "Consultation"
         ],
+        "operationId": "ConsultationCreate",
         "requestBody": {
           "content": {
             "application/json": {
@@ -284,6 +290,7 @@
         "tags": [
           "Consultation"
         ],
+        "operationId": "ConsultationUpdate",
         "requestBody": {
           "content": {
             "application/json": {
@@ -335,6 +342,7 @@
         "tags": [
           "Consultation"
         ],
+        "operationId": "ConsultationDelete",
         "parameters": [
           {
             "name": "consultationId",
@@ -378,6 +386,7 @@
         "tags": [
           "Consultation"
         ],
+        "operationId": "ConsultationGetAll",
         "responses": {
           "200": {
             "description": "Success",
@@ -416,6 +425,7 @@
         "tags": [
           "Consultation"
         ],
+        "operationId": "ConsultationGetById",
         "parameters": [
           {
             "name": "consultationId",
@@ -456,6 +466,7 @@
         "tags": [
           "Doctor"
         ],
+        "operationId": "DoctorCreate",
         "requestBody": {
           "content": {
             "application/json": {
@@ -507,6 +518,7 @@
         "tags": [
           "Doctor"
         ],
+        "operationId": "DoctorUpdate",
         "requestBody": {
           "content": {
             "application/json": {
@@ -558,6 +570,7 @@
         "tags": [
           "Doctor"
         ],
+        "operationId": "DoctorDelete",
         "parameters": [
           {
             "name": "doctorId",
@@ -601,6 +614,7 @@
         "tags": [
           "Doctor"
         ],
+        "operationId": "DoctorGetAll",
         "responses": {
           "200": {
             "description": "Success",
@@ -639,6 +653,7 @@
         "tags": [
           "Doctor"
         ],
+        "operationId": "DoctorGetById",
         "parameters": [
           {
             "name": "doctorId",
@@ -679,6 +694,7 @@
         "tags": [
           "Pet"
         ],
+        "operationId": "PetCreate",
         "requestBody": {
           "content": {
             "application/json": {
@@ -730,6 +746,7 @@
         "tags": [
           "Pet"
         ],
+        "operationId": "PetUpdate",
         "requestBody": {
           "content": {
             "application/json": {
@@ -781,6 +798,7 @@
         "tags": [
           "Pet"
         ],
+        "operationId": "PetDelete",
         "parameters": [
           {
             "name": "petId",
@@ -824,6 +842,7 @@
         "tags": [
           "Pet"
         ],
+        "operationId": "PetGetAll",
         "responses": {
           "200": {
             "description": "Success",
@@ -862,6 +881,7 @@
         "tags": [
           "Pet"
         ],
+        "operationId": "PetGetById",
         "parameters": [
           {
             "name": "petId",
@@ -902,6 +922,7 @@
         "tags": [
           "Treatment"
         ],
+        "operationId": "TreatmentCreate",
         "requestBody": {
           "content": {
             "application/json": {
@@ -953,6 +974,7 @@
         "tags": [
           "Treatment"
         ],
+        "operationId": "TreatmentUpdate",
         "requestBody": {
           "content": {
             "application/json": {
@@ -1004,6 +1026,7 @@
         "tags": [
           "Treatment"
         ],
+        "operationId": "TreatmentDelete",
         "parameters": [
           {
             "name": "treatmentId",
@@ -1047,6 +1070,7 @@
         "tags": [
           "Treatment"
         ],
+        "operationId": "TreatmentGetAll",
         "responses": {
           "200": {
             "description": "Success",
@@ -1085,6 +1109,7 @@
         "tags": [
           "Treatment"
         ],
+        "operationId": "TreatmentGetById",
         "parameters": [
           {
             "name": "treatmentId",

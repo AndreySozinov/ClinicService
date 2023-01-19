@@ -2,6 +2,7 @@
 using ClinicService.Models;
 using ClinicService.Services;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace ClinicService.Controllers
 {
@@ -17,6 +18,7 @@ namespace ClinicService.Controllers
         }
 
         [HttpPost("create")]
+        [SwaggerOperation(OperationId = "DoctorCreate")]
         public ActionResult<int> Create([FromBody] CreateDoctorRequest createRequest)
         {
             int res = _doctorRepository.Create(new Doctor
@@ -30,6 +32,7 @@ namespace ClinicService.Controllers
         }
 
         [HttpPut("update")]
+        [SwaggerOperation(OperationId = "DoctorUpdate")]
         public ActionResult<int> Update([FromBody] UpdateDoctorRequest updateRequest)
         {
             int res = _doctorRepository.Update(new Doctor
@@ -44,6 +47,7 @@ namespace ClinicService.Controllers
         }
 
         [HttpDelete("delete")]
+        [SwaggerOperation(OperationId = "DoctorDelete")]
         public ActionResult<int> Delete(int doctorId)
         {
             int res = _doctorRepository.Delete(doctorId);
@@ -51,12 +55,14 @@ namespace ClinicService.Controllers
         }
 
         [HttpGet("get-all")]
+        [SwaggerOperation(OperationId = "DoctorGetAll")]
         public ActionResult<List<Doctor>> GetAll()
         {
             return Ok(_doctorRepository.GetAll());
         }
 
         [HttpGet("get-by-id")]
+        [SwaggerOperation(OperationId = "DoctorGetById")]
         public ActionResult<Doctor> GetById(int doctorId)
         {
             return Ok(_doctorRepository.GetById(doctorId));
